@@ -14,6 +14,7 @@
     href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
   <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <link rel="stylesheet" href="./nav_break.css">
   <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
   <style>
     .github-corner {
@@ -28,16 +29,17 @@
   </div>
   <script>
     window.$docsify = {
-      name: 'Math_Book_for_ML',
-      repo: 'hrjtju/Math_Book_for_ML',
+      logo: '/logo_ud.png',
+      name: '人工智能的数学基础',
+      repo: 'datawhalechina/math-for-ai',
 
-      // autoHeader: true,
       loadSidebar: true,
-      subMaxLevel: 1,
+      hideSidebar: false,
+      subMaxLevel: 3,
 
       auto2top: true,
       executeScript: true,
-      mergeNavbar: true,
+      mergeNavbar: true, 
 
       themeable: {
         responsiveTables: false // default
@@ -92,7 +94,13 @@
   <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script><!-- 在index.html的<head>中引入CSS（选一种样式） -->
+  
+  <!-- 在<body>末尾引入JS -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 
+    
 </body>
 
 </html>
+
